@@ -1,0 +1,54 @@
+#calulator
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Kn</title>
+</head>
+<body>
+  <table border="2" align="center" id= "demo">
+     <th>CALCULATOR</th>
+     <tr> 
+       <td><marquee> First Number</td>
+       <td><input type ="number" name="fn" id="fn"></td>
+      </tr>
+      <tr>
+       <td><marquee direction= "up">Second Number</marquee></td>
+       <td><input type ="number" name="sn" id="sn"></td>
+      </tr>
+        
+       <tr>
+       <td>Choose<select button="sasa()" name= "op" id="sl">
+       <option>+</option>
+        <option>*</option>
+        <option>/</option>
+        <option>- </option>
+      </select>
+     </td>
+    </tr>
+     <tr>
+       <td><button style="Background-color: green;" onclick="give()" name="kazi" id="kazi">ANSWER</button>
+       <td>
+        <input type= "number" name="hivi" id="hivi" style= "background-color: blue;" disabled>
+      </td>
+   </table>
+   
+    
+     <script>
+     function give(){
+                 var name1= document.getElementById("fn").value;
+                 var name2=document.getElementById("sn").value;
+                 var name3 = document.getElementByName("op")[0].value;
+            name3.addEventListener("change",function(){
+           document.getElementById("sl").innerHTML= name3.value;
+        
+});
+        
+
+    
+ 
+
+     </script>   
+
+</body>
+</html>
